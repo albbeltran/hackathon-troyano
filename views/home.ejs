@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Tutor UAQ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Tu Tutor UAQ</h1>
+
+        <div class="container-btn" id="container-btn">
+            <button class="btn signup" id="btnSignup">Registrarse</button>
+            <button class="btn login" id="btnLogin">Iniciar sesión</button>
+        </div>
+
+        <div class="container-form signup" id="container-form signup">
+            <form class="form" id="signupForm">
+                <div class="container-input">
+                    <label for="userText">Expediente </label>
+                    <input type="text" name="userExp" id="userExp">
+                </div>
+                <div class="container-input">
+                    <label for="userName">Nombre </label>
+                    <input type="text" name="userName" id="userName">
+                </div>
+                <div class="container-input">
+                    <label for="userEmail">Correo </label>
+                    <input type="email" name="userEmail" id="userEmail">
+                </div>
+                <div class="container-input">
+                    <label for="userUsername">Usuario </label>
+                    <input type="text" name="userUsername" id="userUsername">
+                </div>
+                <div class="container-input">
+                    <label for="userPassword">Contraseña </label>
+                    <input type="password" name="userPassword" id="userPassword">
+                </div>
+                <input type="submit" class="submit" value="Sign Up" name="submit">
+            </form>
+        </div>
+
+        <div class="container-form login" id="container-form login">
+            <form class="form" id="loginForm">
+                <div class="container-input">
+                    <label for="userUsernameLogin">Usuario o expediente </label>
+                    <input type="text" name="userUsernameLogin" id="userUsernameLogin">
+                </div>
+                <div class="container-input">
+                    <label for="userPasswordLogin">Contraseña </label>
+                    <input type="password" name="userPasswordLogin" id="userPasswordLogin">
+                </div>
+                <input type="submit" class="submit" value="Login" name="submit">
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
