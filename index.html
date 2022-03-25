@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackaton</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Buscar ayuda particular</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ver mi historial medico</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <form method="POST" action="search_map.php">
+            <select multiple name="municipios" id="municipios">
+                <option>Amealco de Bonfil</option>
+                <option>Pinal de Amoles</option>
+                <option>Arroyo Seco</option>
+                <option>Cadereyta de Montes</option>
+                <option>Colon</option>
+                <option>Corregidora</option>
+                <option>Ezequiel Montes</option>
+                <option>Huimilpan</option>
+                <option>Jalpan de Serra</option>
+                <option>Landa de Matamoros</option>
+                <option>El Marquez</option>
+                <option>Pedro Escobedo</option>
+                <option>Peñamiller</option>     
+                <option>Queretaro</option>
+                <option>San Joaquin</option>
+                <option>San Juan del Rio</option>
+                <option>Tequisquiapan</option>
+                <option>Toliman</option>
+            </select>
+
+            <input type="submit" </form>
+
+</body>
+
+</html>
