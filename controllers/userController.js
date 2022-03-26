@@ -8,6 +8,10 @@ function getPaginaInicio(req, res) {
     }
 }
 
+function getCalendar(req, res) {
+    res.render('calendar')
+}
+
 function getPaginaLogin(req, res) {
     res.render('login',  {errors: req.flash('errors'), regErrors: req.flash('regErrors')});
 }
@@ -24,9 +28,9 @@ function getPaginaArea(req, res) {
     }
 }
 
-registro = async (req, res) => {
+registro = async(req, res) => {
     let user = new User(req.body);
-    try{
+    try {
         await user.register();
         res.redirect('/area-materia');
     }
@@ -36,10 +40,10 @@ registro = async (req, res) => {
     }
 };
 
-function login(req,res){
+function login(req, res) {
     let user = new User(req.body);
-    async function userLogin(){
-        try{
+    async function userLogin() {
+        try {
             await user.login()
             req.session.user = {usuario: user.data.usuario}
             req.session.save(() => res.redirect('/area-materia'));
@@ -51,7 +55,7 @@ function login(req,res){
     userLogin()
 }
 
-function logout(req,res){
+function logout(req, res) {
     async function logOut() {
         await req.session.destroy();
         res.redirect('/');
@@ -65,6 +69,7 @@ function buscarMateria(req, res) {
 
 exports.getPaginaInicio = getPaginaInicio;
 exports.getPaginaLogin = getPaginaLogin;
+exports.getCalendar = getCalendar;
 exports.getPaginaRegistrarse = getPaginaRegistrarse;
 exports.getPaginaArea = getPaginaArea;
 exports.login = login;
