@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+.container{
+    margin: 5em auto;
+    width: 400px;
+    border: 1px solid #ddd;
+    padding: 1em;
+    box-shadow: -.5px 3px 5px rgba(0,0,0,0.2);
+}
+
+.title{
+    text-align: center;
+    margin: .2em 0;
+    color: #232323;
+}
+
+.calendar{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.day{
+    list-style: none;
+    text-align: right;
+    padding: .3em .5em;
+    color: #444;
+
+}
+
+.day-name{
+    background: #eee;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.first-day{
+    grid-column-start: 2;
+
+} 
+body {margin: 0;}
+.container2{
+    display: grid;
+    grid-template-columns: 55% 45% ;
+    height: 50vh;
+    
+  }
+.left{
+    
+}
+.rigth{
+
+}
+.img{
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+}
+.Container3{
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10%;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 12px;
+    padding: 10px 50px;
+ 
+    
+}
+.pa {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.icon{
+    padding: 10px 0px;
+}
