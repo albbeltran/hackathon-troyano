@@ -4,6 +4,11 @@
 <body>
     <div class="container">
         <div class="container-form" id="container-form">
+
+            <% errors.forEach(function(errormsg){ %>
+                <div class="alerta-msg"><%= errormsg %></div>
+            <% }) %>
+
             <form class="form" id="loginForm" action="/login" method="post">
                 <div class="container-input">
                     <label for="usuario">Usuario </label>

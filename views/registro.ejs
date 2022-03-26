@@ -4,10 +4,19 @@
 <body>
     <div class="container">
         <div class="container-form" id="container-form">
+
+            <% errors.forEach(function(errormsg, idx, array){ %>
+                <%if (idx === array.length - 1){ %>
+                    <div class="alerta-msg last"><%= errormsg %></div>
+                <% } else {%>
+                    <div class="alerta-msg"><%= errormsg %></div>
+                <% } %>
+            <% }) %>
+
             <form class="form" id="signupForm" action="/registro" method="post">
                 <div class="container-input">
                     <label for="userText">Expediente </label>
-                    <input type="text" name="expediente" id="userExp">
+                    <input type="text" name="expediente" id="userExp" onkeypress="return onlyNumbers(event)">
                 </div>
                 <div class="container-input">
                     <label for="userName">Nombre </label>
@@ -29,4 +38,6 @@
             </form>
         </div>        
     </div>
+
+    <script src="js/registro.js"></script>
 </body>

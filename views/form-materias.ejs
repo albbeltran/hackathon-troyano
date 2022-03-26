@@ -1,0 +1,31 @@
+<%- include('./partials/head.ejs') %>
+<%- include('./partials/menu.ejs') %>
+
+<body>
+    <div class="container">
+        <div class="container-texto">
+            <p class="texto">Bienvenido <%= usuario %>, por favor selecciona el área en la que requieras asesoría.</p>
+        </div>
+
+        <div class="container-form" id="container-form">
+            <form class="form" id="loginForm" action="/cargar-materias" method="post">
+                <div class="container-input">
+                    <div class="container-label">
+                        <label for="areaMateria" class="areaLabel">Escoge un área:</label>
+                    </div>
+
+                    <div class="container-select">
+                        <select name="areaMateria" class="areaSelector" id="areaSelector">
+                            <option value="categoria" name="categoria">Ciencias Exactas</option>
+                            <option value="categoria" name="categoria">Ciencias Economicas</option>
+                            <option value="categoria" name="categoria">Ciencias Economicas</option>
+                            <option value="categoria" name="categoria">Ciencias Economicas</option>
+                            <option value="categoria" name="categoria">Ciencias Economicas</option>
+                          </select>
+                    </div>
+                </div>
+                <input type="submit" class="submit" value="Buscar" name="submit">
+            </form>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,47 @@
+<%- include('./partials/head.ejs') %>
+<%- include('./partials/menu.ejs') %>
+
+<body>
+    <div class="container">
+        <div class="container-form" id="container-form">
+            <% errors.forEach(function(errormsg){ %>
+                <div class="alerta-msg"><%= errormsg %></div>
+            <% }) %>
+
+            <form class="form" id="registroAsesor" action="/registrar-asesor" method="post">
+                <div class="container-input">
+                    <div class="container-label">
+                        <label for="areaMateria" class="areaLabel">Escoge un área:</label>
+                    </div>
+
+                    <div class="container-select">
+                        <select name="areaMateria" class="areaSelector" id="areaSelector">
+                            <option value="categoria" name="categoria">Ciencias Exactas</option>
+                            <option value="categoria" name="categoria">Ciencias Economicas</option>
+                            <option value="categoria" name="categoria">Ciencias Economicas</option>
+                            <option value="categoria" name="categoria">Ciencias Economicas</option>
+                            <option value="categoria" name="categoria">Ciencias Economicas</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="container-input">
+                    <label for="nombreMateria">Nombre de la materia:</label>
+                    <input type="text" name="nombreMateria" id="nombreMateria">
+                </div>
+                <div class="container-input">
+                    <label for="promedioMateria">Ingresa tu promedio en la materia:</label>
+                    <input type="text" name="promedioMateria" id="promedioMateria">
+                </div>
+                <div class="container-input">
+                    <label for="motivo">¿Por qué deberías ser asesor?</label>
+                    <input type="text" name="motivo" id="motivo">
+                </div>
+                <div class="container-input">
+                    <label for="horarioTutor">Selecciona tu horario: </label>
+                    <input type="password" name="horarioTutor" id="horarioTutor">
+                </div>
+                <input type="submit" class="submit" value="Subir" name="submit">
+            </form>
+        </div>        
+    </div>
+</body>

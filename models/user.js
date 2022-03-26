@@ -29,9 +29,11 @@ User.prototype.cleanUp = function() {
 
 User.prototype.validate = function() {
     return new Promise(async (resolve, reject) => {
-        if(this.data.usuario == '') this.errors.push('Debes ingresar un usuario')
+        if(this.data.expediente == '') this.errors.push('Debes ingresar un expediente.')
+        if(this.data.nombre == '') this.errors.push('Debes ingresar un nombre.')
         if(this.data.usuario != '' && !validator.isAlphanumeric(this.data.usuario)) this.errors.push('El usuario solo puede contener numeros y letras.')
         if(!validator.isEmail(this.data.email)) this.errors.push('Debes de proveer un correo electrónico válido.')
+        if(this.data.usuario == '') this.errors.push('Debes ingresar un usuario.')
         if(this.data.password == '') this.errors.push('Debes ingresar una contraseña.')
         if(this.data.password.length > 0 && this.data.password.length < 12) this.errors.push('La contraseña debe tener al menos 12 caracteres.')
         if(this.data.password.length > 50) this.errors.push('La contraseña no puede exceder 50 caracteres.')
@@ -52,6 +54,7 @@ User.prototype.validate = function() {
         resolve()
     })
 }
+
 
 User.prototype.login = function() {
     return new Promise((resolve,reject) => {

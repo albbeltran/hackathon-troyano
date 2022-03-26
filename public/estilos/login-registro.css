@@ -1,68 +1,122 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: whitesmoke;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
 }
 
-.container .container-form{
-    /* display: block; */
-    margin: 0em auto;
-    width: 100%;
-    max-width: 400px;
-    padding: 0em 1.5em;
-    padding-bottom: 0em;
-    background-color: whitesmoke;
-    border-radius: 1%;
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.container .container-form .form{
-    display: flex;
-    flex-direction: column;
+.container .container-texto {
+  width: 100%;
+  margin-bottom: 5em;
 }
 
-.container .container-form .form .container-input{
-    text-align: left;
-    font-size: 16px;
-    font-weight: bolder;
-    margin-bottom: 1.5em;
+.container .container-texto .texto {
+  font-size: 22px;
 }
 
-.container .container-form .form .container-input input{
-    font-size: 17px;
-    margin-top: 0.5em;
-    padding: 0.5em 0.5em;
-    width: 100%;
-    border-radius: 3%;
-    border: 1px solid black;
-    outline: none;
+.container .container-form {
+  /* display: block; */
+  margin: 0em auto;
+  width: 100%;
+  max-width: 400px;
+  padding: 0em 1.5em;
+  padding-bottom: 0em;
+  background-color: whitesmoke;
+  border-radius: 1%;
 }
 
-.container .container-form .form .container-input input:focus{
-    border: 1px solid #16635a;
+.container .container-form .alerta-msg {
+  background-color: tomato;
+  padding: 1em 0.5em;
+  margin-bottom: 0.75em;
 }
 
-.container .container-form .form .submit{
-    margin: 0em auto;
-    width: 100px;
-    padding: 0.75em 1em;
-    border-radius: 5%;
-    border: 2px solid #16635a;
-    color: #16635a;
-    background: transparent;
-    font-size: 16px;
-    cursor: pointer;
-    margin-bottom: 2em;
+.container .container-form .alerta-msg.last {
+  margin-bottom: 2em;
 }
 
-.container .container-form .form .submit:hover{
-    background: #1d867a;
-    border: 2px solid transparent;
-    color: whitesmoke;
+.container .container-form .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
+.container .container-form .form .container-input {
+  margin: 0 auto;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bolder;
+  margin-bottom: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .container-form .form .container-input .container-label {
+  margin-bottom: 2em;
+}
+
+.container .container-form .form .container-input .container-label .areaLabel {
+  font-size: 18px;
+  text-align: center;
+}
+
+.container .container-form .form .container-input input {
+  font-size: 17px;
+  margin-top: 0.5em;
+  padding: 0.5em 0.5em;
+  width: 100%;
+  border-radius: 3%;
+  border: 1px solid black;
+  outline: none;
+}
+
+.container .container-form .form .container-input input:focus {
+  border: 1px solid #16635a;
+}
+
+.container .container-form .form .submit {
+  margin: 0em auto;
+  width: 100px;
+  padding: 0.75em 1em;
+  border-radius: 5%;
+  border: 2px solid #16635a;
+  color: #16635a;
+  background: transparent;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 2em;
+}
+
+.container .container-form .form .submit:hover {
+  background: #1d867a;
+  border: 2px solid transparent;
+  color: whitesmoke;
+}
+/*# sourceMappingURL=login-registro.css.map */

@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .container-texto{
+        width: 100%;
+        margin-bottom: 5em;
+        .texto{
+            font-size: 22px;
+        }
+    }
+
+    .container-form{
+        /* display: block; */
+        margin: 0em auto;
+        width: 100%;
+        max-width: 400px;
+        padding: 0em 1.5em;
+        padding-bottom: 0em;
+        background-color: whitesmoke;
+        border-radius: 1%;
+
+        .alerta-msg{ 
+            background-color: tomato;
+            padding: 1em 0.5em; 
+            margin-bottom: 0.75em;
+        }
+
+        .alerta-msg.last{ 
+            margin-bottom: 2em;
+        }
+
+        .form{
+            display: flex;
+            flex-direction: column;
+
+            .container-input{
+                margin: 0 auto;
+                text-align: left;
+                font-size: 16px;
+                font-weight: bolder;
+                margin-bottom: 1.5em;
+                display: flex;
+                flex-direction: column;
+
+                .container-label{
+                    margin-bottom: 2em;
+                    .areaLabel{
+                        font-size: 18px;
+                        text-align: center;
+                    }
+                }
+
+                .container-select{
+                    .areaSelector{
+                    
+                    }
+                }
+
+                input{
+                    font-size: 17px;
+                    margin-top: 0.5em;
+                    padding: 0.5em 0.5em;
+                    width: 100%;
+                    border-radius: 3%;
+                    border: 1px solid black;
+                    outline: none;
+
+                    &:focus{
+                        border: 1px solid #16635a;
+                    }
+                }
+            }
+
+            .submit{
+                margin: 0em auto;
+                width: 100px;
+                padding: 0.75em 1em;
+                border-radius: 5%;
+                border: 2px solid #16635a;
+                color: #16635a;
+                background: transparent;
+                font-size: 16px;
+                cursor: pointer;
+                margin-bottom: 2em;
+
+                &:hover{
+                    background: #1d867a;
+                    border: 2px solid transparent;
+                    color: whitesmoke;
+                }
+            }
+        }
+    }
+}
