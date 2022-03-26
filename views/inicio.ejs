@@ -1,0 +1,37 @@
+<%- include('./partials/head.ejs') %>
+
+<body>
+  <%- include('./partials/menu.ejs') %>
+
+  <div class="container">
+    <div class="container materias">
+      <div class="materias">
+        <h2 class="title">Materias</h2>
+        <div class="container-materia">
+          <input class="checkbox" name="algebra" id="algebra" type="checkbox">
+          <label class="checkbox-label" for="algebra">Algebra</label>
+        </div>
+        <div class="container-materia">
+          <input class="checkbox" name="programacion" id="programacion" type="checkbox">
+          <label class="checkbox-label" for="programacion">Programacion</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="container tutores">
+      <a class="tutor" target="_self" href="#">
+        <p class="nombre">Juan Pablo</p>
+        <div class="thumb">
+          <img src="https://e6.pngbyte.com/pngpicture/10676/png-computer-icons-user-profile-clip-art-priest_thumbnail.png"height="50px">   
+        </div>
+        <div class="descripcion">
+          <h3 class="puntaje">4.5 / 5</h3>
+          <h3 class="materia">Matematicas</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <%- include('./partials/footer.ejs') %>
+</body>
+</html>

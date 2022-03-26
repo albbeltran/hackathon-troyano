@@ -4,14 +4,7 @@
   -webkit-box-sizing: border-box;
 }
 
-.container {
-  width: 100%;
-  max-width: 1088px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.btn, header .headboard .menuBar .menu .btn-menu {
+.btn, header .headboard .menuBar .menu .btn-inicio, header .headboard .menuBar .menu .btn-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,7 +20,7 @@
   transition: all 0.1s ease;
 }
 
-.btn:hover, header .headboard .menuBar .menu .btn-menu:hover {
+.btn:hover, header .headboard .menuBar .menu .btn-inicio:hover, header .headboard .menuBar .menu .btn-menu:hover {
   -webkit-box-shadow: 0px 0px 6px #adadad;
           box-shadow: 0px 0px 6px #adadad;
 }
@@ -44,6 +37,7 @@ header .headboard {
   background-color: #fcfcfc;
   -webkit-box-shadow: 0px 0.5px 10px silver;
           box-shadow: 0px 0.5px 10px silver;
+  padding: 1em 3em;
 }
 
 header .headboard .menuBar {
@@ -69,16 +63,6 @@ header .headboard .menuBar .logo {
   padding-left: 0em;
 }
 
-header .headboard .menuBar .searchInput {
-  font-size: 16px;
-  width: 40em;
-  height: 3.125em;
-  background-color: transparent;
-  border: 1px solid #868784;
-  padding: 0em 0.5em;
-  text-align: center;
-}
-
 header .headboard .menuBar .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -89,17 +73,34 @@ header .headboard .menuBar .menu {
   padding: 1em;
 }
 
+header .headboard .menuBar .menu .btn-inicio {
+  background-color: #868784;
+  color: white;
+  margin: 0em 2em;
+  font-weight: 700;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-box-shadow: 0px 0px 6px 1px #888888;
+          box-shadow: 0px 0px 6px 1px #888888;
+}
+
+header .headboard .menuBar .menu .btn-inicio:hover {
+  -webkit-box-shadow: 0px 0px 3px 0px #7a7a7a;
+          box-shadow: 0px 0px 3px 0px #7a7a7a;
+  background-color: #636363;
+}
+
 header .headboard .menuBar .menu .btn-menu {
   font-weight: 700;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  -webkit-box-shadow: 0px 0px 6px 1px #2d81ff;
-          box-shadow: 0px 0px 6px 1px #2d81ff;
+  -webkit-box-shadow: 0px 0px 6px 1px #44adb1;
+          box-shadow: 0px 0px 6px 1px #44adb1;
 }
 
 header .headboard .menuBar .menu .btn-menu:hover {
-  -webkit-box-shadow: 0px 0px 3px 0px #2d81ff;
-          box-shadow: 0px 0px 3px 0px #2d81ff;
-  background-color: #1e5fc0;
+  -webkit-box-shadow: 0px 0px 3px 0px #1e6166;
+          box-shadow: 0px 0px 3px 0px #1e6166;
+  background-color: #2a8a91;
 }
 /*# sourceMappingURL=menu.css.map */

@@ -1,0 +1,91 @@
+$primaryColor: #1E9788;
+$black: #131515;
+$white: #fcfcfc;
+$clearGray: #868784;
+$white-gray: rgb(247, 247, 247);
+
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+
+    .container {
+        margin: 3em auto;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 1200px;
+      
+        .container.materias {
+            background-color: transparent;
+            width: 15%;
+            text-align: left;
+            border-right: 3px solid $clearGray;
+
+            .materias{
+                .title{
+                    margin-bottom: 1.5em;
+                }
+
+                .container-materia{
+                    .checkbox{
+                        width: 1em;
+                        height: 1em;
+                        background-color: #d5d5d5;
+                        border-radius: 0.25px;
+                    }
+
+                    .checkbox-label{
+                        display:inline-flex;
+                        align-items: center;
+                        color: #4c4c4c;
+                        font-size: 16px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+      
+        .container.tutores {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: left;
+            width: 80%;
+
+            .tutor{
+                border: 3px solid $clearGray;
+                border-radius: 8%;
+                margin: 0em 1.25em;
+                margin-bottom: 3em;
+                padding: 2em 1.75em;
+                color: black;
+                text-decoration: none;
+
+                &:hover{
+                    border: 3px solid $primaryColor;
+                }
+
+                .nombre{
+                    color: $primaryColor;
+                    font-weight: bold;
+                    font-size: 22px;
+                }
+
+                .descripcion{
+                    .puntaje{
+                        margin-bottom: 0.5em;
+                    }
+                }
+
+                .thumb{
+                    margin: 1em 0em;
+                }
+            }
+        }
+    }
+}

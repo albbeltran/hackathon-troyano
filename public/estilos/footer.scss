@@ -1,0 +1,86 @@
+$black: #131515;
+$white-gray: rgb(241, 241, 241);
+$white: #fcfcfc;
+
+body{
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    color: $black;
+    
+    footer{
+        .social-media {
+            background: $white-gray;
+            padding: 4em 0em 2em 0em;
+            height: max-content;
+
+            .title{
+                font-size: 2em;
+                margin-top: 0em;
+                margin-bottom: 2em;
+                text-align: center;
+                font-size: 2em;
+                color: $black;
+                text-align: center;
+            }
+
+            .container{
+                display: flex;
+                justify-content: center;
+
+                a{
+                    color: $black;
+                    text-align: center;
+                    width: 5em;
+                    display: block;
+                    padding: 1rem 0rem;
+                    border-radius: 3px;
+                    font-size: 30px;
+                    margin: 0 1.25em;
+
+                    &:hover{
+                        color: $white;
+                    }
+                }
+                
+                .twitter:hover{
+                    background: #1da1f2;
+                }
+
+                .facebook:hover{
+                    background: #1877f2;
+                }
+
+                .instagram:hover{
+                    background: #5851db;
+                }
+            }
+
+            .copyright{
+                text-align: center;
+                margin-top: 0em;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:800px) {
+    body{
+        footer{
+            .social-media{
+                padding: 2.5em 0em 0em 0em;
+                .title{
+                    margin-bottom: 1em;
+                }
+                .container{
+                    flex-wrap: wrap;
+                    align-items: center;
+                }
+                .copyright{
+                    margin-top: 3.5em;
+                    font-size: 12.5px;
+                }
+            }
+        }
+    }
+}

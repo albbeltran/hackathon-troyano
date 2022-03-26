@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+body .container {
+  margin: 3em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  max-width: 1200px;
+}
+
+body .container .container.materias {
+  background-color: transparent;
+  width: 15%;
+  text-align: left;
+  border-right: 3px solid #868784;
+}
+
+body .container .container.materias .materias .title {
+  margin-bottom: 1.5em;
+}
+
+body .container .container.materias .materias .container-materia .checkbox {
+  width: 1em;
+  height: 1em;
+  background-color: #d5d5d5;
+  border-radius: 0.25px;
+}
+
+body .container .container.materias .materias .container-materia .checkbox-label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #4c4c4c;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+body .container .container.tutores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  width: 80%;
+}
+
+body .container .container.tutores .tutor {
+  border: 3px solid #868784;
+  border-radius: 8%;
+  margin: 0em 1.25em;
+  margin-bottom: 3em;
+  padding: 2em 1.75em;
+  color: black;
+  text-decoration: none;
+}
+
+body .container .container.tutores .tutor:hover {
+  border: 3px solid #1E9788;
+}
+
+body .container .container.tutores .tutor .nombre {
+  color: #1E9788;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+body .container .container.tutores .tutor .descripcion .puntaje {
+  margin-bottom: 0.5em;
+}
+
+body .container .container.tutores .tutor .thumb {
+  margin: 1em 0em;
+}
+/*# sourceMappingURL=inicio.css.map */

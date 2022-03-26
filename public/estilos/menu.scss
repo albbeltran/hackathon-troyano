@@ -10,13 +10,6 @@ $white-gray: rgb(247, 247, 247);
     -webkit-box-sizing: border-box;
 }
 
-.container{
-    width: 100%;
-    max-width: 1088px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
 .btn{
     display: flex;
     align-items: center;
@@ -42,6 +35,7 @@ header{
         width: 100%;
         background-color: $white;
         box-shadow: 0px 0.5px 10px rgb(192, 192, 192);
+        padding: 1em 3em;
 
         .menuBar{
             display: flex;
@@ -62,31 +56,47 @@ header{
             //     border: 1px solid $clearGray;
             // }
 
-            .searchInput{
-                font-size: 16px;
-                width: 40em;
-                height: 3.125em;
-                background-color: transparent;
-                border: 1px solid $clearGray;
-                padding: 0em 0.5em;
-                text-align: center;
-            }
+            // .searchInput{
+            //     font-size: 16px;
+            //     width: 40em;
+            //     height: 3.125em;
+            //     background-color: transparent;
+            //     border: 1px solid $clearGray;
+            //     padding: 0em 0.5em;
+            //     text-align: center;
+            // }
 
             .menu{
                 display: flex;
                 align-items: center;
                 padding: 1em;
 
+                .btn-inicio{
+                    @extend .btn;
+
+                    background-color: $clearGray;
+                    color: white;
+                    margin: 0em 2em;
+                    font-weight: 700;
+                    transition:all 0.2s ease;
+                    box-shadow: 0px 0px 6px 1px rgb(136, 136, 136);
+
+                    &:hover{
+                        box-shadow: 0px 0px 3px 0px rgb(122, 122, 122);
+                        background-color: rgb(99, 99, 99);
+                    }
+                }
+
                 .btn-menu{
                     @extend .btn;
 
                     font-weight: 700;
                     transition:all 0.2s ease;
-                    box-shadow: 0px 0px 6px 1px rgb(45, 129, 255);
+                    box-shadow: 0px 0px 6px 1px rgb(68, 173, 177);
 
                     &:hover{
-                        box-shadow: 0px 0px 3px 0px rgb(45, 129, 255);
-                        background-color: rgb(30, 95, 192);
+                        box-shadow: 0px 0px 3px 0px rgb(30, 97, 102);
+                        background-color: rgb(42, 138, 145);
                     }
                 }
             }

@@ -1,0 +1,86 @@
+body {
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  color: #131515;
+}
+
+body footer .social-media {
+  background: #f1f1f1;
+  padding: 4em 0em 2em 0em;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+body footer .social-media .title {
+  font-size: 2em;
+  margin-top: 0em;
+  margin-bottom: 2em;
+  text-align: center;
+  font-size: 2em;
+  color: #131515;
+  text-align: center;
+}
+
+body footer .social-media .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body footer .social-media .container a {
+  color: #131515;
+  text-align: center;
+  width: 5em;
+  display: block;
+  padding: 1rem 0rem;
+  border-radius: 3px;
+  font-size: 30px;
+  margin: 0 1.25em;
+}
+
+body footer .social-media .container a:hover {
+  color: #fcfcfc;
+}
+
+body footer .social-media .container .twitter:hover {
+  background: #1da1f2;
+}
+
+body footer .social-media .container .facebook:hover {
+  background: #1877f2;
+}
+
+body footer .social-media .container .instagram:hover {
+  background: #5851db;
+}
+
+body footer .social-media .copyright {
+  text-align: center;
+  margin-top: 0em;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 800px) {
+  body footer .social-media {
+    padding: 2.5em 0em 0em 0em;
+  }
+  body footer .social-media .title {
+    margin-bottom: 1em;
+  }
+  body footer .social-media .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body footer .social-media .copyright {
+    margin-top: 3.5em;
+    font-size: 12.5px;
+  }
+}
+/*# sourceMappingURL=footer.css.map */
