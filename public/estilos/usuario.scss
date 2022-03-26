@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body{
+    .main-title{
+        .title{
+            text-align: center;
+            margin-top: 1.5em;
+        }
+    }
+
+    .container-father{
+        margin: 2em auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .container-calendario{
+            width: 70%;
+
+            .title{
+                text-align: center;
+            }
+
+            .subtitle{
+                text-align: center;
+            }
+
+            .calendario{
+                // width: 50%;
+                margin: 5em auto;
+                width: 400px;
+                border: 1px solid #ddd;
+                padding: 1em;
+                box-shadow: -.5px 3px 5px rgba(0,0,0,0.2);
+        
+                .title{
+                    text-align: center;
+                    margin: .2em 0;
+                    color: #232323;
+                }
+        
+                .calendar{
+                    display: grid;
+                    grid-template-columns: repeat(7, 1fr);
+        
+                    
+                    .day{
+                        list-style: none;
+                        text-align: right;
+                        padding: .3em .5em;
+                        color: #444;
+        
+                        .day-name{
+                            background: #eee;
+                            font-weight: 700;
+                            text-align: center;
+            
+                        }
+        
+                        .first-day{
+                            grid-column-start: 2;
+                        }
+                    }
+        
+                    input[type=date] {
+                        height: 35px;
+                        margin: 0 auto;
+                        width: 100%;
+                        font-family: arial, sans-serif;
+                        font-size: 18px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        background-color: #ffffff;
+                        outline: rgb(253, 0, 0);
+                        border: 0;
+                        border-radius: 3px;
+                        padding: 0 3px;
+                        color: rgb(0, 0, 0);
+                        text-decoration: #232323;
+                    
+                    }
+                }
+            }
+        }
+    
+        .kardex{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            text-align: center;
+
+            .thumb{
+                margin-bottom: 2em;
+
+                .img{
+                    margin: 0 auto;
+                    display: block;
+                    margin: 0px auto;
+                    text-align: center;
+                }
+            }
+
+            .subtitle{
+                margin-bottom: 1em;
+            }
+
+            .materia{
+                font-size: 18px;
+                margin-bottom: 0.5em;
+            }
+        }
+    }
+    
+    .main{
+        display: flex;
+        flex-direction: row;
+        margin: 2em auto;
+        justify-content: space-around;
+        margin-bottom: 7em;
+
+        .title{
+            margin-bottom: 2em;
+        }
+
+        .container-calificaciones{
+            display: flex;
+            flex-direction: column;
+
+            .calificaciones{
+                display: flex;
+                flex-direction: row;
+
+                .calificacion{
+                    border: 3px solid rgb(0, 0, 0);
+                    border-radius: 10%;
+                    margin-left: 12px;
+                    margin-right: 12px;
+                    margin-top: 12px;
+                    padding: 10px 50px;  
+                }
+            }
+        }
+
+        .container-medallas{
+            .icon{
+                padding: 10px 0px;
+            }
+        }
+    }
+}

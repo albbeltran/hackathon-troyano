@@ -58,11 +58,6 @@ header .headboard .menuBar {
           align-items: center;
 }
 
-header .headboard .menuBar .logo {
-  padding: 1em;
-  padding-left: 0em;
-}
-
 header .headboard .menuBar .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,6 +66,14 @@ header .headboard .menuBar .menu {
       -ms-flex-align: center;
           align-items: center;
   padding: 1em;
+}
+
+header .headboard .menuBar .menu .profile {
+  margin-left: 1.5em;
+}
+
+header .headboard .menuBar .menu .profile:hover {
+  cursor: pointer;
 }
 
 header .headboard .menuBar .menu .btn-inicio {

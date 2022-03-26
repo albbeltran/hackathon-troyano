@@ -1,13 +1,16 @@
 <%- include('./partials/head.ejs') %>
-<%- include('./partials/menu.ejs') %>
+<%- include('./partials/menu-acceso.ejs') %>
 
 <body>
-    <div class="container">
+    <h1 class="title">¡Bienvenido a TutoUAQ!</h1>
+
+    <div class="container acceso">
         <div class="container-btn" id="container-btn">
             <a href="/registrarse" class="btn signup" id="btnSignup">Registrarse</a>
             <a href="/iniciar-sesion" class="btn login" id="btnLogin">Iniciar sesión</a>
         </div>
     </div>
     <!-- <script src="js/acceso.js"></script> -->
+    <%- include('./partials/footer.ejs') %>
 </body>
 </html>

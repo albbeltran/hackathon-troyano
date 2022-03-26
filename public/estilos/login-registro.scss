@@ -11,10 +11,11 @@ body{
     background-color: whitesmoke;
 }
 
-.container{
+.container.acceso{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding-bottom: 10em;
 
     .container-texto{
         width: 100%;
@@ -58,7 +59,9 @@ body{
                 flex-direction: column;
 
                 .container-label{
-                    margin-bottom: 2em;
+                    margin: 0 auto;
+                    margin-bottom: 1em;
+
                     .areaLabel{
                         font-size: 18px;
                         text-align: center;
@@ -67,7 +70,8 @@ body{
 
                 .container-select{
                     .areaSelector{
-                    
+                        width: 200px;
+                        height: 30px;
                     }
                 }
 
@@ -76,6 +80,7 @@ body{
                     margin-top: 0.5em;
                     padding: 0.5em 0.5em;
                     width: 100%;
+                    width: 300px;
                     border-radius: 3%;
                     border: 1px solid black;
                     outline: none;

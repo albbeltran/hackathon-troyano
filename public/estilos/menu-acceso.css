@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  background-color: #1E9788;
+  color: white;
+  border-radius: 0.75em;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 0px 0px 6px #adadad;
+          box-shadow: 0px 0px 6px #adadad;
+}
+
+header {
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  color: #131515;
+}
+
+header .headboard {
+  display: inline-block;
+  width: 100%;
+  background-color: #fcfcfc;
+  -webkit-box-shadow: 0px 0.5px 10px silver;
+          box-shadow: 0px 0.5px 10px silver;
+  padding: 1em 3em;
+}
+
+header .headboard .menuBar {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=menu-acceso.css.map */

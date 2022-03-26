@@ -1,8 +1,9 @@
 <%- include('./partials/head.ejs') %>
-<%- include('./partials/menu.ejs') %>
 
 <body>
-    <div class="container">
+    <%- include('./partials/menu-acceso.ejs') %>
+
+    <div class="container acceso">
         <div class="container-form" id="container-form">
 
             <% errors.forEach(function(errormsg){ %>
@@ -22,4 +23,6 @@
             </form>
         </div>
     </div>
+
+    <%- include('./partials/footer.ejs') %>
 </body>

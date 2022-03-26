@@ -17,6 +17,6 @@ router.post('/cargar-materias', mtriaController.cargarMaterias);
 
 router.get('/registro-asesor', asesorController.getPaginaRegistro);
 router.post('/registrar-asesor', asesorController.registro);
-
+router.get('/usuario', asesorController.getPaginaUsuario);
 
 module.exports = router

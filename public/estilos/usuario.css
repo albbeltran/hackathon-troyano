@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body .main-title .title {
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+body .container-father {
+  margin: 2em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container-father .container-calendario {
+  width: 70%;
+}
+
+body .container-father .container-calendario .title {
+  text-align: center;
+}
+
+body .container-father .container-calendario .subtitle {
+  text-align: center;
+}
+
+body .container-father .container-calendario .calendario {
+  margin: 5em auto;
+  width: 400px;
+  border: 1px solid #ddd;
+  padding: 1em;
+  -webkit-box-shadow: -0.5px 3px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: -0.5px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+body .container-father .container-calendario .calendario .title {
+  text-align: center;
+  margin: .2em 0;
+  color: #232323;
+}
+
+body .container-father .container-calendario .calendario .calendar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+}
+
+body .container-father .container-calendario .calendario .calendar .day {
+  list-style: none;
+  text-align: right;
+  padding: .3em .5em;
+  color: #444;
+}
+
+body .container-father .container-calendario .calendario .calendar .day .day-name {
+  background: #eee;
+  font-weight: 700;
+  text-align: center;
+}
+
+body .container-father .container-calendario .calendario .calendar .day .first-day {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+
+body .container-father .container-calendario .calendario .calendar input[type=date] {
+  height: 35px;
+  margin: 0 auto;
+  width: 100%;
+  font-family: arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  outline: #fd0000;
+  border: 0;
+  border-radius: 3px;
+  padding: 0 3px;
+  color: black;
+  -webkit-text-decoration: #232323;
+          text-decoration: #232323;
+}
+
+body .container-father .kardex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+  text-align: center;
+}
+
+body .container-father .kardex .thumb {
+  margin-bottom: 2em;
+}
+
+body .container-father .kardex .thumb .img {
+  margin: 0 auto;
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+}
+
+body .container-father .kardex .subtitle {
+  margin-bottom: 1em;
+}
+
+body .container-father .kardex .materia {
+  font-size: 18px;
+  margin-bottom: 0.5em;
+}
+
+body .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 2em auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 7em;
+}
+
+body .main .title {
+  margin-bottom: 2em;
+}
+
+body .main .container-calificaciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .main .container-calificaciones .calificaciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .main .container-calificaciones .calificaciones .calificacion {
+  border: 3px solid black;
+  border-radius: 10%;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-top: 12px;
+  padding: 10px 50px;
+}
+
+body .main .container-medallas .icon {
+  padding: 10px 0px;
+}
+/*# sourceMappingURL=usuario.css.map */

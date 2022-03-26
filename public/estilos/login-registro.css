@@ -11,7 +11,7 @@ body {
   background-color: whitesmoke;
 }
 
-.container {
+.container.acceso {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,18 +21,19 @@ body {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-bottom: 10em;
 }
 
-.container .container-texto {
+.container.acceso .container-texto {
   width: 100%;
   margin-bottom: 5em;
 }
 
-.container .container-texto .texto {
+.container.acceso .container-texto .texto {
   font-size: 22px;
 }
 
-.container .container-form {
+.container.acceso .container-form {
   /* display: block; */
   margin: 0em auto;
   width: 100%;
@@ -43,17 +44,17 @@ body {
   border-radius: 1%;
 }
 
-.container .container-form .alerta-msg {
+.container.acceso .container-form .alerta-msg {
   background-color: tomato;
   padding: 1em 0.5em;
   margin-bottom: 0.75em;
 }
 
-.container .container-form .alerta-msg.last {
+.container.acceso .container-form .alerta-msg.last {
   margin-bottom: 2em;
 }
 
-.container .container-form .form {
+.container.acceso .container-form .form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,7 +64,7 @@ body {
           flex-direction: column;
 }
 
-.container .container-form .form .container-input {
+.container.acceso .container-form .form .container-input {
   margin: 0 auto;
   text-align: left;
   font-size: 16px;
@@ -78,30 +79,37 @@ body {
           flex-direction: column;
 }
 
-.container .container-form .form .container-input .container-label {
-  margin-bottom: 2em;
+.container.acceso .container-form .form .container-input .container-label {
+  margin: 0 auto;
+  margin-bottom: 1em;
 }
 
-.container .container-form .form .container-input .container-label .areaLabel {
+.container.acceso .container-form .form .container-input .container-label .areaLabel {
   font-size: 18px;
   text-align: center;
 }
 
-.container .container-form .form .container-input input {
+.container.acceso .container-form .form .container-input .container-select .areaSelector {
+  width: 200px;
+  height: 30px;
+}
+
+.container.acceso .container-form .form .container-input input {
   font-size: 17px;
   margin-top: 0.5em;
   padding: 0.5em 0.5em;
   width: 100%;
+  width: 300px;
   border-radius: 3%;
   border: 1px solid black;
   outline: none;
 }
 
-.container .container-form .form .container-input input:focus {
+.container.acceso .container-form .form .container-input input:focus {
   border: 1px solid #16635a;
 }
 
-.container .container-form .form .submit {
+.container.acceso .container-form .form .submit {
   margin: 0em auto;
   width: 100px;
   padding: 0.75em 1em;
@@ -114,7 +122,7 @@ body {
   margin-bottom: 2em;
 }
 
-.container .container-form .form .submit:hover {
+.container.acceso .container-form .form .submit:hover {
   background: #1d867a;
   border: 2px solid transparent;
   color: whitesmoke;

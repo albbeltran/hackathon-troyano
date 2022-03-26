@@ -44,32 +44,18 @@ header{
             justify-content: space-between;
             align-items:center;
 
-            .logo{
-                padding: 1em;
-                padding-left: 0em;
-            }
-
-            // .search{
-            //     width: 31.25em;
-            //     height: 3.125em;
-            //     background-color: transparent;
-            //     border: 1px solid $clearGray;
-            // }
-
-            // .searchInput{
-            //     font-size: 16px;
-            //     width: 40em;
-            //     height: 3.125em;
-            //     background-color: transparent;
-            //     border: 1px solid $clearGray;
-            //     padding: 0em 0.5em;
-            //     text-align: center;
-            // }
-
             .menu{
                 display: flex;
                 align-items: center;
                 padding: 1em;
+
+                .profile{
+                    margin-left: 1.5em;
+
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
 
                 .btn-inicio{
                     @extend .btn;

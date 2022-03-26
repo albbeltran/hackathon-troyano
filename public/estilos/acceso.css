@@ -11,21 +11,28 @@ body{
     background-color: whitesmoke;
 }
 
-.container{
-    margin: 6em auto;
+.title{
+    text-align: center;
+    margin-top: 2em;
+    font-size: 45px;
+}
+
+.container.acceso{
+    margin: 4em auto;
     width: 100%;
     max-width: 1000px;
     text-align: center;
+    padding-bottom: 10em;
 }
 
-.container .container-btn{
+.container.acceso .container-btn{
     margin: 0 auto;
-    padding: 5em 0em;
+    padding: 2.5em 0em;
     display: flex;
     flex-direction: column;
 }
 
-.container .container-btn .btn{
+.container.acceso .container-btn .btn{
     margin: 0.5em auto;
     width: 150px;
     padding: 0.75em 1em;
@@ -37,6 +44,6 @@ body{
     /* color: tomato; */
 }
 
-.container .btn:hover{
+.container.acceso .btn:hover{
     background-color: #16635a;
 }

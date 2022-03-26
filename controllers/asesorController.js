@@ -4,6 +4,10 @@ function getPaginaRegistro(req, res) {
     res.render('registro-asesor', {errors: req.flash('errors'), regErrors: req.flash('regErrors')});
 }
 
+function getPaginaUsuario(req, res) {
+    res.render('usuario');
+}
+
 registro = async (req, res) => {
     let asesor = new Asesor(req.body);
     try{
@@ -17,4 +21,5 @@ registro = async (req, res) => {
 };
 
 exports.getPaginaRegistro = getPaginaRegistro;
+exports.getPaginaUsuario = getPaginaUsuario;
 exports.registro = registro;
