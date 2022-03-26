@@ -4,14 +4,14 @@
 <body>
     <div class="container">
         <div class="container-form" id="container-form">
-            <form class="form" id="loginForm">
+            <form class="form" id="loginForm" action="/login" method="post">
                 <div class="container-input">
-                    <label for="userUsernameLogin">Usuario o expediente </label>
-                    <input type="text" name="userUsernameLogin" id="userUsernameLogin">
+                    <label for="usuario">Usuario </label>
+                    <input type="text" name="usuario" id="usuario">
                 </div>
                 <div class="container-input">
-                    <label for="userPasswordLogin">Contraseña </label>
-                    <input type="password" name="userPasswordLogin" id="userPasswordLogin">
+                    <label for="password">Contraseña </label>
+                    <input type="password" name="password" id="password">
                 </div>
                 <input type="submit" class="submit" value="Login" name="submit">
             </form>
