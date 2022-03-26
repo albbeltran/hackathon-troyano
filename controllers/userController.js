@@ -1,5 +1,6 @@
+const User = require('../models/User');
+
 function getPaginaAcceso(req, res) {
-    // res.render('acceso', { script: '<script src="js/acceso.js"></script>'});
     res.render('acceso');
 }
 

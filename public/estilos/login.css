@@ -1,7 +1,0 @@
-.container .container-form.login{
-    display: none;
-}
-
-.container .container-form.login.active{
-    display: block;
-}
