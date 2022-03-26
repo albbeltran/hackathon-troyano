@@ -8,6 +8,10 @@ function getPaginaInicio(req, res) {
     res.render('inicio');
 }
 
+function getCalendar(req, res) {
+    res.render('calendar')
+}
+
 function getPaginaLogin(req, res) {
     res.render('login');
 }
@@ -16,25 +20,24 @@ function getPaginaRegistrarse(req, res) {
     res.render('registro');
 }
 
-registro = async (req, res) => {
+registro = async(req, res) => {
     let user = new User(req.body);
-    try{
+    try {
         await user.register();
         res.render('inicio');
-    }
-    catch(errors){
+    } catch (errors) {
         res.send(errors);
     }
 };
 
-function login(req,res){
+function login(req, res) {
     let user = new User(req.body);
-    async function userLogin(){
-        try{
+    async function userLogin() {
+        try {
             await user.login()
-            req.session.user = {username: user.data.usuario}
+            req.session.user = { username: user.data.usuario }
             req.session.save(() => res.redirect('/inicio'));
-        } catch(errors){
+        } catch (errors) {
             // req.flash('errors', error)
             console.log(errors)
             req.session.save(() => res.redirect('/'));
@@ -43,7 +46,7 @@ function login(req,res){
     userLogin()
 }
 
-function logout(req,res){
+function logout(req, res) {
     async function logOut() {
         await req.session.destroy();
         res.redirect('/');
@@ -55,6 +58,7 @@ function logout(req,res){
 exports.getPaginaAcceso = getPaginaAcceso;
 exports.getPaginaInicio = getPaginaInicio;
 exports.getPaginaLogin = getPaginaLogin;
+exports.getCalendar = getCalendar;
 exports.getPaginaRegistrarse = getPaginaRegistrarse;
 exports.login = login;
 exports.registro = registro;
