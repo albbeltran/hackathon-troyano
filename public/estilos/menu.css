@@ -4,7 +4,7 @@
   -webkit-box-sizing: border-box;
 }
 
-.btn, header .headboard .menuBar .menu .btn-inicio, header .headboard .menuBar .menu .btn-menu {
+.btn, header .headboard .menuBar .menu .btn-inicio, header .headboard .menuBar .menu .btn-menu, header .headboard .menuBar .menu .profile-options .btn.logout {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,7 +20,7 @@
   transition: all 0.1s ease;
 }
 
-.btn:hover, header .headboard .menuBar .menu .btn-inicio:hover, header .headboard .menuBar .menu .btn-menu:hover {
+.btn:hover, header .headboard .menuBar .menu .btn-inicio:hover, header .headboard .menuBar .menu .btn-menu:hover, header .headboard .menuBar .menu .profile-options .btn.logout:hover {
   -webkit-box-shadow: 0px 0px 6px #adadad;
           box-shadow: 0px 0px 6px #adadad;
 }
@@ -68,14 +68,6 @@ header .headboard .menuBar .menu {
   padding: 1em;
 }
 
-header .headboard .menuBar .menu .profile {
-  margin-left: 1.5em;
-}
-
-header .headboard .menuBar .menu .profile:hover {
-  cursor: pointer;
-}
-
 header .headboard .menuBar .menu .btn-inicio {
   background-color: #868784;
   color: white;
@@ -105,5 +97,30 @@ header .headboard .menuBar .menu .btn-menu:hover {
   -webkit-box-shadow: 0px 0px 3px 0px #1e6166;
           box-shadow: 0px 0px 3px 0px #1e6166;
   background-color: #2a8a91;
+}
+
+header .headboard .menuBar .menu .profile {
+  margin-left: 1.5em;
+}
+
+header .headboard .menuBar .menu .profile:hover {
+  cursor: pointer;
+}
+
+header .headboard .menuBar .menu .profile-options {
+  display: block;
+  position: absolute;
+  top: 90px;
+  right: 37px;
+}
+
+header .headboard .menuBar .menu .profile-options .logout.btn-inicio, header .headboard .menuBar .menu .profile-options .logout.btn-menu, header .headboard .menuBar .menu .profile-options .logout.btn {
+  -webkit-box-shadow: 0px 0px 0px 0px white;
+          box-shadow: 0px 0px 0px 0px white;
+  border: 2px solid transparent;
+}
+
+header .headboard .menuBar .menu .profile-options .logout.btn-inicio:hover, header .headboard .menuBar .menu .profile-options .logout.btn-menu:hover, header .headboard .menuBar .menu .profile-options .logout.btn:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=menu.css.map */

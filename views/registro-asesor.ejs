@@ -1,8 +1,9 @@
 <%- include('./partials/head.ejs') %>
-<%- include('./partials/menu.ejs') %>
 
 <body>
-    <div class="container">
+    <%- include('./partials/menu.ejs') %>
+
+    <div class="container acceso">
         <div class="container-form" id="container-form">
             <% errors.forEach(function(errormsg){ %>
                 <div class="alerta-msg"><%= errormsg %></div>
@@ -11,7 +12,7 @@
             <form class="form" id="registroAsesor" action="/registrar-asesor" method="post">
                 <div class="container-input">
                     <div class="container-label">
-                        <label for="areaMateria" class="areaLabel">Escoge un área:</label>
+                        <p class="texto">Escoge un área:</p>
                     </div>
 
                     <div class="container-select">
@@ -32,11 +33,11 @@
                 </div>
                 <div class="container-input">
                     <label for="motivo">¿Por qué deberías ser asesor?</label>
-                    <input type="text" name="motivo" id="motivo">
+                    <textarea name="motivo" id="motivo"></textarea>
                 </div>
                 <div class="container-input">
                     <label for="horarioTutor">Selecciona tu horario: </label>
-                    <input type="password" name="horarioTutor" id="horarioTutor">
+                    <input type="text" name="horarioTutor" id="horarioTutor">
                 </div>
                 <input type="submit" class="submit" value="Subir" name="submit">
             </form>

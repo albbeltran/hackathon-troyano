@@ -73,5 +73,6 @@ exports.getCalendar = getCalendar;
 exports.getPaginaRegistrarse = getPaginaRegistrarse;
 exports.getPaginaArea = getPaginaArea;
 exports.login = login;
+exports.logout = logout;
 exports.registro = registro;
 exports.buscarMateria = buscarMateria;

@@ -10,6 +10,7 @@ function getPaginaUsuario(req, res) {
 
 registro = async (req, res) => {
     let asesor = new Asesor(req.body);
+    
     try{
         await asesor.register();
         res.redirect('/');

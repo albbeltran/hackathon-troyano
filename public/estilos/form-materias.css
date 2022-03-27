@@ -11,16 +11,10 @@ body {
   background-color: whitesmoke;
 }
 
-body .container {
+body .container-form-materias {
   margin: 6em auto;
   width: 100%;
   max-width: 1000px;
-  text-align: center;
-}
-
-body .container .container .container-btn {
-  margin: 0 auto;
-  padding: 5em 0em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,21 +24,65 @@ body .container .container .container-btn {
           flex-direction: column;
 }
 
-body .container .container .container-btn .container .container-btn .btn {
-  margin: 0.5em auto;
-  width: 150px;
-  padding: 0.75em 1em;
-  border: none;
-  font-size: 16px;
-  background-color: #1E9788;
-  cursor: pointer;
+body .container-form-materias .container-texto .texto {
+  text-align: center;
+  font-size: 20px;
+}
+
+body .container-form-materias .container-form {
+  margin: 0 auto;
+}
+
+body .container-form-materias .container-form .container-input {
+  margin: 0 auto;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /* color: tomato; */
 }
 
-body .container .container .container-btn .container .btn:hover {
-  background-color: #16635a;
+body .container-form-materias .container-form .container-input .title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 2.5em;
+  margin-bottom: 1.25em;
+}
+
+body .container-form-materias .container-form .container-input .container-select {
+  margin-bottom: 2.25em;
+}
+
+body .container-form-materias .container-form .container-input .container-select .areaSelector {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 180px;
+  height: 30px;
+}
+
+body .container-form-materias .container-form .container-input .submit {
+  margin: 0em auto;
+  width: 100px;
+  padding: 0.75em 1em;
+  border-radius: 5%;
+  border: 2px solid #16635a;
+  color: #16635a;
+  background: transparent;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 2em;
+}
+
+body .container-form-materias .container-form .container-input .submit:hover {
+  background: #1d867a;
+  border: 2px solid transparent;
+  color: whitesmoke;
 }
 /*# sourceMappingURL=form-materias.css.map */

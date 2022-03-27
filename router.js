@@ -7,6 +7,7 @@ const asesorController = require('./controllers/asesorController')
 router.get('/', userController.getPaginaInicio);
 router.get('/iniciar-sesion', userController.getPaginaLogin);
 router.post('/login', userController.login);
+router.post('/logout', userController.logout);
 router.get('/calendar', userController.getCalendar)
 router.get('/registrarse', userController.getPaginaRegistrarse);
 router.post('/registro', userController.registro);

@@ -10,32 +10,67 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: whitesmoke;
 
-    .container{
+    .container-form-materias{
         margin: 6em auto;
         width: 100%;
         max-width: 1000px;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
 
-        .container .container-btn{
-            margin: 0 auto;
-            padding: 5em 0em;
-            display: flex;
-            flex-direction: column;
-
-            .container .container-btn .btn{
-                margin: 0.5em auto;
-                width: 150px;
-                padding: 0.75em 1em;
-                border: none;
-                font-size: 16px;
-                background-color: #1E9788;
-                cursor: pointer;
-                justify-content: center;
-                /* color: tomato; */
+        .container-texto{
+            .texto{
+                text-align: center;
+                font-size: 20px;
             }
+        }
 
-            .container .btn:hover{
-                background-color: #16635a;
+        .container-form{
+            margin: 0 auto;
+
+            .container-input{
+                margin: 0 auto;
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .title{
+                    font-size: 22px;
+                    font-weight: bold;
+                    margin-top: 2.5em;
+                    margin-bottom: 1.25em;
+                }
+
+                .container-select{
+                    margin-bottom: 2.25em;
+
+                    .areaSelector{
+                        text-align: center;
+                        display: block;
+                        margin: 0 auto;
+                        width: 180px;
+                        height: 30px;
+                    }
+                }
+
+                .submit{
+                    margin: 0em auto;
+                    width: 100px;
+                    padding: 0.75em 1em;
+                    border-radius: 5%;
+                    border: 2px solid #16635a;
+                    color: #16635a;
+                    background: transparent;
+                    font-size: 16px;
+                    cursor: pointer;
+                    margin-bottom: 2em;
+    
+                    &:hover{
+                        background: #1d867a;
+                        border: 2px solid transparent;
+                        color: whitesmoke;
+                    }
+                }
             }
         }
     }

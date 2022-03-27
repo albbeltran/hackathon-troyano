@@ -7,9 +7,14 @@
                 <nav class="menu">
                     <a href="/" class="btn-inicio">Inicio</a>
                     <a href="/registro-asesor" class="btn-menu">Ser Asesor</a>  
-                    <a class="profile">
+                    <a class="profile" id="profile">
                         <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpluspng.com%2Fimg-png%2Fpng-user-icon-circled-user-icon-2240.png&f=1&nofb=1" width="50px">
                     </a>
+                    <div class="profile-options" id="profile-options">
+                        <form action="/logout" method="POST" class="logout-form" id="logout-form">
+                            <button class="btn logout">Cerrar sesion</button>
+                        </form>
+                    </div>
                 </nav>
             </div>
         </div>

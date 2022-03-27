@@ -1,4 +1,4 @@
-const coleccionAsesores = require('../db').db().collection('tutores')
+const coleccionTutores = require('../db').db().collection('tutores')
 
 let Asesor = class {
     constructor(data){
@@ -42,7 +42,7 @@ Asesor.prototype.register = function() {
     
         /*Paso 2: Solo si no hay errores de validacion, guardar en la base de datos*/
         try{ 
-            coleccionAsesores.insertOne(this.data)
+            coleccionTutores.insertOne(this.data)
             resolve()
         } catch{
             reject(this.errors)
